@@ -25,61 +25,61 @@ window.onload = function () {
 
     // central point for spin
     // left,top
-    // var pivots = [
-    //             [44, 147],		//pivot [0]
-    //             [92, 126]		//pivot [1]
-    //         ];
+    var pivots = [
+                [44, 147],		//pivot [0]
+                [92, 126]		//pivot [1]
+            ];
     // paw1.attr({ stroke: 'red', strokeDasharray: "40 280", fill: 'none', strokeWidth: 20 });
     // paw1.transform('r0,100,100');
     // paw1.animate({ transform: "r360,100,100" }, 1000, mina.linear, anim);
     
     //set test
-    // paw1.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
-    // paw2.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
-    // paw3.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
-    // paw4.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
-    // pawCenter.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
+    paw1.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 3,
+        strokeDasharray: "50 24 50 24", //(poly , range , .... loop )
+        strokeDashoffset: 5
+    });
+    paw2.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 3,
+        strokeDasharray: "50 24 50 24", //(poly , range , .... loop )
+        strokeDashoffset: 5
+    });
+    paw3.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 3,
+        strokeDasharray: "50 24 50 24", //(poly , range , .... loop )
+        strokeDashoffset: 5
+    });
+    paw4.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 3,
+        strokeDasharray: "50 24 50 24", //(poly , range , .... loop )
+        strokeDashoffset: 5
+    });
+    pawCenter.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 3,
+        strokeDasharray: "50 24 50 24", //(poly , range , .... loop )
+        strokeDashoffset: 5
+    });
 
     function close() {
         clearTimeout(timer);
 
-        // Snap.animate(0,400, function( value ){
-        //    pawCenter.attr({ 'strokeDashoffset': value })
-        //    paw1.attr({ 'strokeDashoffset': value })
-        //    paw2.attr({ 'strokeDashoffset': value })
-        //    paw3.attr({ 'strokeDashoffset': value })
-        //    paw4.attr({ 'strokeDashoffset': value })
-        // },5000 );
+        Snap.animate(0,1000, function( value ){     //speed clockwise , speed counterclockwise
+           pawCenter.attr({ 'strokeDashoffset': value })
+           paw1.attr({ 'strokeDashoffset': value })
+           paw2.attr({ 'strokeDashoffset': value })
+           paw3.attr({ 'strokeDashoffset': value })
+           paw4.attr({ 'strokeDashoffset': value })
+        },10000 );
 
         // paw1.animate({ 
         //     transform: "r" + [8, pivots[0]]
@@ -129,13 +129,13 @@ window.onload = function () {
     // animation area
     //======================
     
-    timer = setTimeout(close, 50);
+    timer = setTimeout(close, 2000);  //start after 2s
     // timer = setTimeout(open, 50);
 
     //now recursive each hover
     blackpaw.hover(open, 
                 function () {
-                    timer = setTimeout(close, 200);
+                    timer = setTimeout(close, 3000);  //start after 3s  
                 }
             );
 

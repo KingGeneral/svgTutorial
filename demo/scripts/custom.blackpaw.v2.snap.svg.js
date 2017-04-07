@@ -34,41 +34,41 @@ window.onload = function () {
     // paw1.animate({ transform: "r360,100,100" }, 1000, mina.linear, anim);
     
     //set test
-    // paw1.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
-    // paw2.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
-    // paw3.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
-    // paw4.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
-    // pawCenter.attr({
-    //     fill: "none",
-    //     stroke: 'red',
-    //     strokeWidth: 30,
-    //     strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
-    //     strokeDashoffset: 50
-    // });
+    paw1.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 30,
+        strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
+        strokeDashoffset: 50
+    });
+    paw2.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 30,
+        strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
+        strokeDashoffset: 50
+    });
+    paw3.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 30,
+        strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
+        strokeDashoffset: 50
+    });
+    paw4.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 30,
+        strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
+        strokeDashoffset: 50
+    });
+    pawCenter.attr({
+        fill: "none",
+        stroke: 'red',
+        strokeWidth: 30,
+        strokeDasharray: "10 300 40 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10",
+        strokeDashoffset: 50
+    });
 
     function close() {
         clearTimeout(timer);
